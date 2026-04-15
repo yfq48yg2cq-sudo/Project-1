@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" id="calendar"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>ITMD 361: Fundamentals of Web Development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" href="ITMD%20361_%20Fundamentals%20of%20Web%20Development_files/normalize.css">
+  <link rel="stylesheet" href="ITMD%20361_%20Fundamentals%20of%20Web%20Development_files/styles.css">
+  <link rel="icon" type="image/x-icon" href="https://yfq48yg2cq-sudo.github.io/LAb_6/images/favicon.ico">
+  <script src="ITMD%20361_%20Fundamentals%20of%20Web%20Development_files/jquery-3.6.0.js"></script>
+  <script src="ITMD%20361_%20Fundamentals%20of%20Web%20Development_files/jquery-ui.js"></script>
+  <script>
+    $( function() {
+      $( "#accordion" ).accordion();
+    } );
+  </script>
+<style>
+        /* Hide browser UI elements when in extension mode */
+        .extension-mode {
+            -webkit-app-region: drag;
+        }
+        
+        /* Hide link status previews */
+        .extension-mode a {
+            pointer-events: auto !important;
+        }
+        
+        .extension-mode a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Custom scrollbar for extension */
+        .extension-mode ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .extension-mode ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+        
+        .extension-mode ::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 4px;
+        }
+        
+        .extension-mode ::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;
+        }
+        
+        /* Hide status bar link previews */
+        .extension-mode {
+            position: relative;
+        }
+        
+        .extension-mode::after {
+            content: '';
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 20px;
+            background: transparent;
+            pointer-events: none;
+            z-index: 10000;
+        }
+    </style><style id="ripple-animation">
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        </style></head>
+<body>
+  <div id="page">
+    <header id="header">
+      <h1><small>ITMD 361: <!--UPDATE-->Spring 2026</small> Fundamentals&nbsp;of Web Development</h1>
+      <p class="tagline">
+        This class covers the foundational principles of web development. How to research client-server
+        architecture according to current open standards. Taught by
+        <a href="#instructor">Professor Daniel Krieglstein</a>. Course developed by IIT 
+        Professors <a href="https://appliedtech.iit.edu/people/brian-bailey">Brian Bailey</a>, 
+        <a href="https://humansciences.iit.edu/faculty/karl-stolley">Dr. Karl Stolley</a>, &amp; Dr. Daniel Krieglstein.
+      </p>
+      <nav id="navigation">
+        <ul class="nav">
+          <li id="nav-cal"><a href="#">Calendar</a></li>
+          <li id="nav-pro"><a href="https://yfq48yg2cq-sudo.github.io/LAb_6/projects.html">Projects</a></li>
+          <li id="nav-pol"><a href="https://yfq48yg2cq-sudo.github.io/LAb_6/syllabus.html">Syllabus</a></li>
+          <li id="nav-lnk"><a href="https://yfq48yg2cq-sudo.github.io/LAb_6/links.html">Links</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="content">
+      <article class="primary">
+        <h2 class="label">Course Calendar</h2>
+        <p id="tablep">
+          All due dates are terminal at 11:59CT. Work turned in after their time and date will
+          be late and subject to an award of 0 points.
+        </p>
+        <section class="topics">
+          <h3>Topic Schedule:</h3>
+          <div id="accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
+            <button class="accordion ui-accordion-header ui-corner-top ui-state-default ui-accordion-header-active ui-state-active ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="true" aria-expanded="true" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span><!--UPDATE-->01/14 — Week 1</button>
+            <div style="height: 150.883px;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false">
+              <h4 class="topic">Introduction</h4>
+              <ol>
+                <li><em>HTML5 for Web Designers, 2nd ed.</em>,
+                  <ul><li class="nobullet">Introduction; Chapters 1-2</li></ul>
+                </li>
+                <li><em>Pragmatic Version Control Using Git</em>,
+                  <ul><li class="nobullet">Preface; Chapters 1-3 (Part II)</li></ul>
+                </li>
+                <li>Get familiar with Mozilla Developer Network <a href="https://yfq48yg2cq-sudo.github.io/LAb_6/links.html">Links</a></li>
+              </ol>
+            </div>
+            <button class="accordion ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><!--UPDATE-->01/21 — Week 2</button>
+            <div style="display: none; height: 150.883px;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true">
+              <h4 class="topic">Intro to Technologies</h4>
+              <ol>
+                <li><em>HTML5 for Web Designers, 2nd ed.</em>,
+                  <ul><li class="nobullet">Chapters 5-6</li></ul>
+                </li>
+                <li><em>Pragmatic Version Control Using Git</em>,
+                  <ul><li class="nobullet">Chapters 4-9 (Part II)</li></ul>
+                </li>
+              </ol>
+            </div>
+            <button class="accordion ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-5" aria-controls="ui-id-6" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><!--UPDATE-->01/28 — Week 3</button>
+            <div style="display: none; height: 150.883px;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-6" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true">
+              <h4 class="topic">HTML Basics</h4>
+              <ol class="alignleft">
+                <li><em>Responsive Web Design 2nd ed.</em>,
+                  <ul><li class="nobullet">Chapters 1 &amp; 4</li></ul>
+                </li>
+                <li>Marcotte, “<a href="http://alistapart.com/article/responsive-web-design">Responisve Web Design</a>”</li>
+              </ol>
+            </div>
+            <button class="accordion ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-7" aria-controls="ui-id-8" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><!--UPDATE-->02/04 — Week 4</button>
+            <div style="display: none; height: 150.883px;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-8" aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="true">
+              <h4 class="topic">HTML Forms</h4>
+              <ol class="alignleft">
+                <li><em>Responsive Web Design 2nd ed.</em>,
+                  <ul><li class="nobullet">Chapters 3</li></ul>
+                </li>
+                <li><em>HTML5 for Web Designers, 2nd ed.</em>,
+                  <ul><li class="nobullet">Chapters 3</li></ul>
+                </li>
+                <li>Stolley, 
+                  <ul>
+                    <li class="nobullet">“<a href="https://github.com/karlstolley/drc-accessible-images">Part I &amp; II, read all .md files</a>”</li>                  </ul>
+                </li>
+              </ol>
+            </div>
+            <button class="accordion ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-9" aria-controls="ui-id-10" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><!--UPDATE-->02/11 — Week 5</button>
+            <div style="display: none; height: 150.883px;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-10" aria-labelledby="ui-id-9" role="tabpanel" aria-hidden="true">
+              <h4 class="topic">Lab Week: Project 1. No Lectures</h4>
+            </div>
+            <button class="accordion ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-11" aria-controls="ui-id-12" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><!--UPDATE-->02/18 — Week 6</button>
+            <div style="display: none; height: 150.883px;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-12" aria-labelledby="ui-id-11" role="tabpanel" aria-hidden="true">
+              <h4 class="topic">CSS Basics</h4>
+              <ol class="alignleft">
+                <li>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax">CSS Syntax</a></li>
+                <li>MDN: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors">CSS Selectors</a></li>
+                <li>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length">CSS Units of Measure: length</a></li>
+              </ol>
+            </div>
+            <button class="accordion ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-13" aria-controls="ui-id-14" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><!--UPDATE-->02/25 — Week 7</button>
+            <div style="display: none; height: 150.883px;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-14" aria-labelledby="ui-id-13" role="tabpanel" aria-hidden="true">
+              <h4 class="topic">CSS Fonts and Floats</h4>
+              <ol class="alignleft">
+                <li><em>On Web Typography</em>,
+                  <ul><li class="nobullet">Introduction; Chapters 1-3</li></ul>
+                </li>
+                <li><a href="https://www.fonts.com/content/learning/fontology/level-1/type-anatomy">Type anatomy and classifications</a></li>
+                <li>Rutter, “<a href="https://24ways.org/2006/compose-to-a-vertical-rhythm">Compose to a Vertical Rhythm</a>”</li>
+                <li><a href="http://www.modularscale.com/">Modularscale.com</a></li>
+              </ol>
+            </div>
+            <button class="accordion ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-15" aria-controls="ui-id-16" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><!--UPDATE-->03/04 — Week 8</button>
+            <div style="display: none; height: 150.883px;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-16" aria-labelledby="ui-id-15" role="tabpanel" aria-hidden="true">
+              <h4 class="topic">CSS Positions and Layouts</h4>
+              <ol class="alignleft">
+                <li><em>Responsive Web Design 2nd ed.</em>,
+                  <ul><li class="nobullet">Chapters 2 &amp; 5</li></ul>
+                </li>
+              </ol>
+            </div>
+            <button class="accordion ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-17" aria-controls="ui-id-18" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><!--UPDATE-->03/11 — Week 9</button>
+            <div style="display: none; height: 150.883px;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-18" aria-labelledby="ui-id-17" role="tabpanel" aria-hidden="true">
+              <h4 class="topic">CSS Layout Demo</h4>
+              <ol class="alignleft">
+                <li>Chris Coyier, “<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a>”</li>
+                <li>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Basic concepts of flexbox</a></li>
+              </ol>
+            </div>  
+            <button class="accordion ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-19" aria-controls="ui-id-20" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><!--UPDATE-->03/18 NO CLASS: Spring Break!</button>
+            <div style="display: none; height: 150.883px;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-20" aria-labelledby="ui-id-19" role="tabpanel" aria-hidden="true">
+              <h4 class="topic">Have Fun</h4>
+            </div>
+            <button class="accordion ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-21" aria-controls="ui-id-22" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><!--UPDATE-->03/25 — Week 10</button>
+            <div style="display: none; height: 150.883px;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-22" aria-labelledby="ui-id-21" role="tabpanel" aria-hidden="true">
+              <h4 class="topic">CSS Animations, Responsive Design</h4>
+            </div>
+            <button class="accordion ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-23" aria-controls="ui-id-24" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><!--UPDATE-->04/01 — Week 11</button>
+            <div style="display: none; height: 150.883px;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-24" aria-labelledby="ui-id-23" role="tabpanel" aria-hidden="true">
+              <h4 class="topic">JavaScript Intro</h4>
+              <ol class="alignleft">
+                <li><em>Eloquent JavaScript 2nd ed.</em>,
+                  <ul><li class="nobullet">Introduction; Chapters 1-2</li></ul>
+                </li>
+                <li>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript Reference</a></li>
+              </ol>
+            </div>
+            <button class="accordion ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-25" aria-controls="ui-id-26" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><!--UPDATE-->04/08 — Week 12</button>
+            <div style="display: none; height: 150.883px;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-26" aria-labelledby="ui-id-25" role="tabpanel" aria-hidden="true">
+              <h4 class="topic">JavaScript Programing Basics</h4>
+              <ol class="alignleft">
+                <li><em>Eloquent JavaScript 2nd ed.</em>,
+                  <ul><li class="nobullet">Chapters 3-4</li></ul>
+                </li>
+                <li>Brown, “<a href="https://www.sitepoint.com/why-use-javascript-style-guide/">Why I Use a JavaScript Style Guide...</a>”</li>
+              </ol>
+            </div>
+            <button class="accordion ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-27" aria-controls="ui-id-28" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><!--UPDATE-->04/15 — Week 13</button>
+            <div style="display: none; height: 150.883px;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-28" aria-labelledby="ui-id-27" role="tabpanel" aria-hidden="true">
+              <h4 class="topic">Google API, Sliders</h4>
+              <ol class="alignleft">
+                <li><em>Eloquent JavaScript 2nd ed.</em>,
+                  <ul><li class="nobullet">Chapters 5-6, 8-10</li></ul>
+                </li>
+              </ol>
+            </div>
+            <button class="accordion ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-29" aria-controls="ui-id-30" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><!--UPDATE-->04/22 — Week 14</button>
+            <div style="display: none; height: 150.883px;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-30" aria-labelledby="ui-id-29" role="tabpanel" aria-hidden="true">
+              <h4 class="topic">Frameworks and SASS</h4>
+              <ol class="alignleft">
+                <li><em>Eloquent JavaScript 2nd ed.</em>,
+                  <ul><li class="nobullet">Chapters 12-15, 17-18</li></ul>
+                </li>
+                <li><em>HTML5 for Web Designers, 2nd ed.</em>,
+                  <ul><li class="nobullet">Chapters 4</li></ul>
+                </li>
+                <li>Traversy Media, “<a href="https://www.youtube.com/watch?v=DEu5xYEZx18">Foundation Framework Crash Course</a>”</li>
+              </ol>
+            </div>
+            <button class="accordion ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-31" aria-controls="ui-id-32" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><!--UPDATE-->04/29 Lab Week: Final Project</button>
+            <div style="display: none; height: 150.883px;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-32" aria-labelledby="ui-id-31" role="tabpanel" aria-hidden="true">
+              <h4 class="topic">Final Project Due</h4>
+            </div>
+            <button class="accordion ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-33" aria-controls="ui-id-34" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><!--UPDATE-->No Class/Finals Week</button>
+            <div style="display: none; height: 150.883px;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-34" aria-labelledby="ui-id-33" role="tabpanel" aria-hidden="true">
+              <h4 class="topic">Good Luck On Finals!</h4>
+            </div>
+          </div>
+        </section>
+        
+        <section class="due-dates">
+          <button class="homework">
+            <h3>Labs</h3>
+          </button>
+          <div>
+            <p class="redfont">Work which fails HTML or CSS validation will receive a 50% point reduction!</p>
+            <table>
+              <tbody><tr class="tablehead">
+                <td class="firstrow">Date</td>
+                <td class="secondrow">Week</td>
+                <td>Task Due</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td><!--UPDATE--><a href="https://github.com/dkriegls/itmd-361-spring2026/tree/main/labs">Labs</a></td>
+              </tr>
+              <tr>
+                <td><!--UPDATE-->01/21</td>
+                <td class="alignleft">Week 2</td>
+                <td class="alignleft">Lab-1</td>
+              </tr>
+              <tr>
+                <td><!--UPDATE-->01/28</td>
+                <td class="alignleft">Week 3</td>
+                <td class="alignleft">Lab-2</td>
+              </tr>
+              <tr>
+                <td><!--UPDATE-->02/04</td>
+                <td class="alignleft">Week 4</td>
+                <td class="alignleft">Lab-3</td>
+              </tr>
+              <tr>
+                <td><!--UPDATE-->02/11</td>
+                <td class="alignleft">Week 5</td>
+                <td class="alignleft">Lab-4</td>
+              </tr>              
+              <tr>
+                <td><!--UPDATE-->02/25</td>
+                <td class="alignleft">Week 7</td>
+                <td class="alignleft">Lab-5</td>
+              </tr>
+              <tr>
+                <td><!--UPDATE-->03/04</td>
+                <td class="alignleft">Week 8</td>
+                <td class="alignleft">Lab-6</td>
+              </tr>
+              <tr>
+                <td><!--UPDATE-->03/11</td>
+                <td class="alignleft">Week 9</td>
+                <td class="alignleft">Lab-7</td>
+              </tr>
+              <tr>
+                <td><!--UPDATE-->03/25</td>
+                <td class="alignleft">Week 10</td>
+                <td class="alignleft">Lab-8</td>
+              </tr>
+              <tr>
+                <td><!--UPDATE-->04/08</td>
+                <td class="alignleft">Week 12</td>
+                <td class="alignleft">Lab-9</td>
+              </tr>
+            </tbody></table>
+          </div>
+          <button class="homework">
+            <h3>Projects</h3>
+          </button>
+          <div>
+            <p class="redfont">Work which fails HTML or CSS validation will receive a 50% point reduction!</p>
+            <table>
+              <tbody><tr class="tablehead">
+                <td class="firstrow">Date</td>
+                <td class="secondrow">Week</td>
+                <td>Task Due</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td><a href="https://yfq48yg2cq-sudo.github.io/LAb_6/projects.html#project-one">Project One</a></td>
+              </tr>
+              <tr>
+                <td><!--UPDATE-->02/18</td>
+                <td class="alignleft">Week 6</td>
+                <td class="alignleft">First Deliverable</td>
+              </tr>
+              <tr>
+                <td><!--UPDATE-->02/25</td>
+                <td class="alignleft">Week 7</td>
+                <td class="alignleft">Comments Due</td>
+              </tr>
+              <tr>
+                <td><!--UPDATE-->03/04</td>
+                <td class="alignleft">Week 8</td>
+                <td class="alignleft">Final Deliverable</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td><a href="https://yfq48yg2cq-sudo.github.io/LAb_6/projects.html#project-two">Project Two</a></td>
+              </tr>
+              <tr>
+                <td><!--UPDATE-->03/11</td>
+                <td class="alignleft">Week 9</td>
+                <td class="alignleft">First Deliverable</td>
+              </tr>
+              <tr>
+                <td><!--UPDATE-->03/25</td>
+                <td class="alignleft">Week 10</td>
+                <td class="alignleft">Comments Due</td>
+              </tr>
+              <tr>
+                <td><!--UPDATE-->04/08</td>
+                <td class="alignleft">Week 12</td>
+                <td class="alignleft">Final Deliverable</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td><a href="https://yfq48yg2cq-sudo.github.io/LAb_6/projects.html#project-three">Project Three</a></td>
+              </tr>
+              <tr>
+                <td><!--UPDATE-->04/15</td>
+                <td class="alignleft">Week 13</td>
+                <td class="alignleft">First Turn In</td>
+              </tr>
+              <tr>
+                <td><!--UPDATE-->04/22</td>
+                <td class="alignleft">Week 14</td>
+                <td class="alignleft">Comments Due</td>
+              </tr>
+              <tr>
+                <td><!--UPDATE-->04/29</td>
+                <td class="alignleft">Week 15</td>
+                <td class="alignleft">Final Turn In (only if you didn't get the map working)</td>
+              </tr>
+            </tbody></table>
+          </div>
+        </section>        
+      </article>
+    </main>
+    
+    <aside id="instructor">
+      <h3>Instructor</h3>
+      <ul>
+        <li><a href="https://appliedtech.iit.edu/people/daniel-krieglstein">Prof. Daniel Krieglstein</a></li>
+        <li><a href="mailto:dkriegls@gmail.com">dkriegls@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/danielkrieglstein">danielkrieglstein</a> on Linkedin</li>
+        <li id="office-hours">
+          <strong>Office hours are by request just before or after class or via GChat when available</strong>. 
+          Email is the best way to get my attention. I try my best to make students a priority.
+        </li>
+      </ul>
+    </aside>
+
+    <footer id="footer">
+      <p class="fineprint">
+        Course site design by <a href="https://karlstolley.com/">Karl Stolley</a> and Daniel Krieglstein.
+        Syllabus licensed under
+        <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons</a>.
+        Source hosted on GitHub. Big thanks to
+        <a href="https://basecamp.com/">Basecamp</a> for free university access.
+      </p>
+    </footer>
+  </div>
+
+
+</body></html>
